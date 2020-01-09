@@ -6,4 +6,4 @@ docker run --rm -it                                          \
     -e RELEASE=0.0.1                                         \
     -e C_API_REPO=https://github.com/mvkvl/dxfeed-c-api.git  \
     --name msbuild-2015                                      \
-    mvkvl/msbuild:2015 $@
+    mvkvl/msbuild:1809-4.5.2-2015 $@

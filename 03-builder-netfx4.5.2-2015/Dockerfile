@@ -1,5 +1,5 @@
 #FROM mcr.microsoft.com/windows/servercore:1809
-FROM mvkvl/msbuild:2015
+FROM mvkvl/msbuild:1809-4.5.2-2015
 #FROM mvkvl/msvs:2015
 
 SHELL ["powershell", "-ExecutionPolicy", "Bypass"]
@@ -14,8 +14,8 @@ RUN echo "toolsInstall"                                                         
     echo "done!"
 
 ADD entrypoint.bat entrypoint.bat
-ADD build.bat build.bat
+ADD builder.bat builder.bat
 
 ENTRYPOINT ["entrypoint.bat"]
-#CMD ["build.bat"]
+#CMD ["builder.bat"]
 CMD ["cmd"]
