@@ -1,0 +1,3 @@
+#!/bin/bash
+
+docker build -t mvkvl/msvsce:2015 -m 2GB .
